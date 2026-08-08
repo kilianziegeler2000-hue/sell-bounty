@@ -1,0 +1,14 @@
+name: BountySystem
+version: 1.0.0
+main: de.openai.bountysystem.BountySystemPlugin
+api-version: '1.21'
+depend: [Vault]
+commands:
+  bounty:
+    description: Zeigt und verwaltet Bounties.
+    usage: /bounty [add <spieler> <betrag>]
+permissions:
+  bountysystem.use:
+    default: true
+  bountysystem.add:
+    default: true

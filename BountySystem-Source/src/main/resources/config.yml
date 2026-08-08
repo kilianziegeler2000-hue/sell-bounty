@@ -1,0 +1,10 @@
+settings:
+  prefix: "&8[&cBounty&8] "
+  top-size: 10
+  minimum-bounty: 1.0
+  top-title: "&c&lBounty Top"
+  added: "&aDu hast &e%money%$ &aBounty auf &f%target% &agesetzt."
+  received: "&cAuf dich wurden &e%money%$ &cBounty gesetzt. Gesamt: &e%total%$"
+  claimed: "&aDu hast die Bounty von &f%target% &aerhalten: &e%money%$"
+  not-enough: "&cDu hast nicht genug Geld."
+  invalid: "&cUngültiger Betrag."

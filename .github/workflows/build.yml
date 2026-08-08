@@ -21,10 +21,10 @@ jobs:
           cache: maven
 
       - name: Build SellSystem
-        run: mvn -B clean package -f SellSystem/pom.xml
+        run: mvn -B clean package -f SellSystem-2.0-Source/pom.xml
 
       - name: Upload SellSystem JAR
         uses: actions/upload-artifact@v4
         with:
           name: SellSystem
-          path: SellSystem/target/SellSystem-2.0.0.jar
+          path: SellSystem-2.0-Source/target/SellSystem-2.0.0.jar

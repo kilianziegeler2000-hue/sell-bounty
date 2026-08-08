@@ -1,0 +1,140 @@
+settings:
+  prefix: "&8[&aSell&8] "
+  sell-title: "&8Sell"
+  sellmulti-title: "&8Sell Multi"
+  progress-title: "&8%category% Progress"
+  default-price: 1.0
+  sold: "&aVerkauft für &e%money%$ &7(Multiplikator: &a%multiplier%x&7)"
+  nothing-sold: "&cDu hast keine Items eingelegt."
+  cancelled: "&7Verkauf abgebrochen."
+
+# ALLE Items sind verkaufbar.
+# Items, die hier nicht eingetragen sind, benutzen settings.default-price.
+# Hier kannst du spezielle Preise überschreiben.
+prices:
+  DIRT: 0.10
+  COBBLESTONE: 0.15
+  STONE: 0.20
+  OAK_LOG: 1.50
+  WHEAT: 0.75
+  ROTTEN_FLESH: 0.50
+  FEATHER: 0.60
+  IRON_INGOT: 3.0
+  GOLD_INGOT: 7.5
+  DIAMOND: 25.0
+  EMERALD: 18.0
+  NETHERITE_INGOT: 150.0
+  NETHER_STAR: 500.0
+  ENCHANTED_BOOK: 35.0
+
+# Multiplikator-Stufen.
+# Die erste freigeschaltete Stufe ist 1.2x.
+levels:
+  1:
+    multiplier: 1.2
+    target: 20000
+  2:
+    multiplier: 1.4
+    target: 50000
+  3:
+    multiplier: 1.6
+    target: 100000
+  4:
+    multiplier: 1.8
+    target: 200000
+  5:
+    multiplier: 2.0
+    target: 400000
+  6:
+    multiplier: 2.2
+    target: 750000
+  7:
+    multiplier: 2.4
+    target: 1250000
+  8:
+    multiplier: 2.6
+    target: 2000000
+  9:
+    multiplier: 2.8
+    target: 3000000
+  10:
+    multiplier: 3.0
+    target: 4500000
+
+# Kategorien für /sellmulti.
+# Der Fortschritt wird pro Kategorie gespeichert.
+categories:
+  mobdrops:
+    name: "&fMob Drops"
+    icon: ROTTEN_FLESH
+    materials:
+      - ROTTEN_FLESH
+      - BONE
+      - STRING
+      - GUNPOWDER
+      - SPIDER_EYE
+      - BLAZE_ROD
+      - ENDER_PEARL
+      - GHAST_TEAR
+      - SLIME_BALL
+      - MAGMA_CREAM
+      - PHANTOM_MEMBRANE
+      - FEATHER
+      - LEATHER
+  farming:
+    name: "&eFarming"
+    icon: WHEAT
+    materials:
+      - WHEAT
+      - CARROT
+      - POTATO
+      - BEETROOT
+      - MELON_SLICE
+      - PUMPKIN
+      - SUGAR_CANE
+      - CACTUS
+      - COCOA_BEANS
+      - NETHER_WART
+  wood:
+    name: "&6Wood"
+    icon: OAK_LOG
+    materials:
+      - OAK_LOG
+      - SPRUCE_LOG
+      - BIRCH_LOG
+      - JUNGLE_LOG
+      - ACACIA_LOG
+      - DARK_OAK_LOG
+      - MANGROVE_LOG
+      - CHERRY_LOG
+      - CRIMSON_STEM
+      - WARPED_STEM
+  ores:
+    name: "&bOres & Valuables"
+    icon: DIAMOND
+    materials:
+      - COAL
+      - RAW_IRON
+      - RAW_GOLD
+      - RAW_COPPER
+      - IRON_INGOT
+      - GOLD_INGOT
+      - COPPER_INGOT
+      - DIAMOND
+      - EMERALD
+      - NETHERITE_SCRAP
+      - NETHERITE_INGOT
+  blocks:
+    name: "&7Blocks"
+    icon: STONE
+    materials: []
+  tools:
+    name: "&aTools"
+    icon: DIAMOND_PICKAXE
+    materials: []
+  books:
+    name: "&dBooks"
+    icon: ENCHANTED_BOOK
+    materials:
+      - BOOK
+      - ENCHANTED_BOOK
